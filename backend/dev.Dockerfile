@@ -8,6 +8,8 @@ COPY package*.json ./
 
 RUN yarn
 
+COPY . .
+
 EXPOSE 3000
 
 CMD [ "nodemon", "-L" ,"app.js" ]
