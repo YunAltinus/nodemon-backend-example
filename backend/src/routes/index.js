@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/", function (req, res) {
+router.get("/", (req, res) => {
   return res.status(201).json({
     success: true,
-    message: "sdsdsdsdasdasdasd!",
+    message: "Successfull!",
   });
 });
 
